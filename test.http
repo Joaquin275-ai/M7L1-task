@@ -1,0 +1,27 @@
+### Traer todas las criaturas
+GET http://localhost:3000/Criaturas
+
+###
+POST http://localhost:3000/Criaturas
+Content-Type: application/json
+
+{
+    "nombre": "Dragón",
+    "tipo": "Fuego",
+    "poder": 100,
+    "capturada": false
+}
+
+###
+PUT http://localhost:3000/Criaturas/5
+Content-Type: application/json
+
+{
+    "poder": 200
+}
+
+###
+DELETE http://localhost:3000/Criaturas/5
+
+###
+GET http://localhost:3000/Criaturas/5
